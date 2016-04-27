@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD46695E1CCF6AB800FA8DA8 /* ZHNstarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD46695D1CCF6AB800FA8DA8 /* ZHNstarView.m */; };
 		CD8254461CCE7A4D004010B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8254451CCE7A4D004010B3 /* main.m */; };
 		CD8254491CCE7A4D004010B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8254481CCE7A4D004010B3 /* AppDelegate.m */; };
 		CD82544C1CCE7A4D004010B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82544B1CCE7A4D004010B3 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		CD8254541CCE7A4D004010B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8254521CCE7A4D004010B3 /* LaunchScreen.storyboard */; };
 		CD82545F1CCE7A4D004010B3 /* ZHNstratViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82545E1CCE7A4D004010B3 /* ZHNstratViewTests.m */; };
 		CD82546A1CCE7A4D004010B3 /* ZHNstratViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8254691CCE7A4D004010B3 /* ZHNstratViewUITests.m */; };
+		CD8254791CCE7A66004010B3 /* singleStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8254781CCE7A66004010B3 /* singleStarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD46695C1CCF6AB800FA8DA8 /* ZHNstarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHNstarView.h; path = ZHNstratView/ZHNstarView.h; sourceTree = SOURCE_ROOT; };
+		CD46695D1CCF6AB800FA8DA8 /* ZHNstarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHNstarView.m; path = ZHNstratView/ZHNstarView.m; sourceTree = SOURCE_ROOT; };
 		CD8254411CCE7A4D004010B3 /* ZHNstratView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHNstratView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8254451CCE7A4D004010B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD8254471CCE7A4D004010B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		CD8254651CCE7A4D004010B3 /* ZHNstratViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHNstratViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8254691CCE7A4D004010B3 /* ZHNstratViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNstratViewUITests.m; sourceTree = "<group>"; };
 		CD82546B1CCE7A4D004010B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8254771CCE7A66004010B3 /* singleStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = singleStarView.h; path = ../singleStarView.h; sourceTree = "<group>"; };
+		CD8254781CCE7A66004010B3 /* singleStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = singleStarView.m; path = ../singleStarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD7E44481CD07C75007FA3A5 /* ZHNstarView */ = {
+			isa = PBXGroup;
+			children = (
+				CD46695C1CCF6AB800FA8DA8 /* ZHNstarView.h */,
+				CD46695D1CCF6AB800FA8DA8 /* ZHNstarView.m */,
+				CD8254771CCE7A66004010B3 /* singleStarView.h */,
+				CD8254781CCE7A66004010B3 /* singleStarView.m */,
+			);
+			path = ZHNstarView;
+			sourceTree = "<group>";
+		};
 		CD8254381CCE7A4D004010B3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +118,7 @@
 		CD8254431CCE7A4D004010B3 /* ZHNstratView */ = {
 			isa = PBXGroup;
 			children = (
+				CD7E44481CD07C75007FA3A5 /* ZHNstarView */,
 				CD8254471CCE7A4D004010B3 /* AppDelegate.h */,
 				CD8254481CCE7A4D004010B3 /* AppDelegate.m */,
 				CD82544A1CCE7A4D004010B3 /* ViewController.h */,
@@ -270,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8254791CCE7A66004010B3 /* singleStarView.m in Sources */,
 				CD82544C1CCE7A4D004010B3 /* ViewController.m in Sources */,
 				CD8254491CCE7A4D004010B3 /* AppDelegate.m in Sources */,
 				CD8254461CCE7A4D004010B3 /* main.m in Sources */,
+				CD46695E1CCF6AB800FA8DA8 /* ZHNstarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +516,7 @@
 				CD8254701CCE7A4D004010B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8254711CCE7A4D004010B3 /* Build configuration list for PBXNativeTarget "ZHNstratViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				CD8254731CCE7A4D004010B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8254741CCE7A4D004010B3 /* Build configuration list for PBXNativeTarget "ZHNstratViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				CD8254761CCE7A4D004010B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
