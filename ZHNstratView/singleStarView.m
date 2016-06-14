@@ -22,7 +22,7 @@
 - (void)drawRect:(CGRect)rect{
 
     UIBezierPath * path = [UIBezierPath bezierPath];
-    path.lineWidth = 0.5;
+    path.lineWidth = 1;
     if (self.strokeColor) {
         [self.strokeColor set];
     }else{
@@ -65,7 +65,7 @@
     for (NSInteger i = 0; i < 5; i++) {
         NSInteger delta = ( i == 1 ? frame.size.width / 30 : 0);
         CGFloat x = radius + radius * cos((0.2 * M_PI * 2)*i+(0.05 * M_PI * 2));
-        CGFloat y = radius - radius * sin((0.2 * M_PI * 2)*i+(0.05 * M_PI *2)) + delta;
+        CGFloat y = radius - radius * sin((0.2 * M_PI * 2)*i+(0.05 * M_PI * 2)) + delta;
         CGPoint point = CGPointMake(x, y);
         [self.outPointsArray addObject:[NSValue valueWithCGPoint:point]];
     }

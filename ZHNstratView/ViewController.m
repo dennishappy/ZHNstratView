@@ -26,9 +26,10 @@
     newStartView.starNumber = 5;
     newStartView.animate = YES;
     newStartView.startShowScore = 2.6;
-    newStartView.backFillColor = [UIColor grayColor];
+    newStartView.strokeColor = [UIColor redColor];
+    newStartView.backFillColor = [UIColor colorWithRed:0.3 green:0.2 blue:0.5 alpha:0.5];
     newStartView.hightLightFillColor = [UIColor redColor];
-    newStartView.scoreInterger = YES;
+//    newStartView.scoreInterger = YES;
     [self.view addSubview:newStartView];
     self.starView = newStartView;
 }

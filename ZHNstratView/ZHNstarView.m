@@ -126,16 +126,15 @@ static const NSString * KarrayKey = @"arrayKey";
         [pan setTranslation:CGPointZero inView:self];
         
     }else if (pan.state == UIGestureRecognizerStateCancelled || pan.state == UIGestureRecognizerStateEnded){
+        CGFloat endX = self.maskView.frame.size.width;
+        CGFloat endY = 1;
+        CGPoint endPoint = CGPointMake(endX, endY);
         if (self.scoreInterger) {
-            CGFloat endX = self.maskView.frame.size.width;
-            CGFloat endY = 1;
-            CGPoint endPoint = CGPointMake(endX, endY);
             [self getCurrentScoreUseCurrentPoint:endPoint useType:scoreTypeInterger];
         }else if(self.scoreContainHalf){
-            CGFloat endX = self.maskView.frame.size.width;
-            CGFloat endY = 1;
-            CGPoint endPoint = CGPointMake(endX, endY);
             [self getCurrentScoreUseCurrentPoint:endPoint useType:scoreTypeContainHalf];
+        }else{
+            [self getCurrentScoreUseCurrentPoint:endPoint useType:scoreTypeNormal];
         }
     }
 }
